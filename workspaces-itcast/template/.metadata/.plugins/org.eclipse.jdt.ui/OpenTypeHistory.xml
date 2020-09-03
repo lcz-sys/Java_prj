@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=chapter/C:\/Program Files \(x86)\/Java\/jre1.8.0_73\/lib\/rt.jar&lt;java.lang.reflect(InvocationHandler.class[InvocationHandler" modifiers="1537" timestamp="1563795031759"/>
+<typeInfo handle="=chapter/D:\/workspaces-itcast\/template\/chapter\/WebContent\/WEB-INF\/lib\/spring-aop-4.3.6.RELEASE.jar&lt;org.aopalliance.intercept(Invocation.class[Invocation" modifiers="1537" timestamp="1586997008065"/>
+<typeInfo handle="=chapter/D:\/workspaces-itcast\/template\/chapter\/WebContent\/WEB-INF\/lib\/spring-aop-4.3.6.RELEASE.jar&lt;org.aopalliance.intercept(MethodInterceptor.class[MethodInterceptor" modifiers="1537" timestamp="1586997008065"/>
+<typeInfo handle="=chapter/src&lt;com.gdcp.aspectj.xml{UserDao.java[UserDao" modifiers="513" timestamp="1585885907907"/>
+<typeInfo handle="=chapter/C:\/Program Files \(x86)\/Java\/jre1.8.0_73\/lib\/rt.jar&lt;org.omg.PortableInterceptor(USER_EXCEPTION.class[USER_EXCEPTION" modifiers="1537" timestamp="1563795031759"/>
+<typeInfo handle="=chapter/src&lt;com.gdcp.aspectj.annotation{UserDao.java[UserDao" modifiers="513" timestamp="1585886115104"/>
+<typeInfo handle="=chapter/C:\/Program Files \(x86)\/Java\/jre1.8.0_73\/lib\/rt.jar&lt;com.sun.jmx.snmp(UserAcl.class[UserAcl" modifiers="1537" timestamp="1563795031759"/>
+<typeInfo handle="=springJDBCTest/src&lt;cn.gdcp.jdbc{AccountDao.java[AccountDao" modifiers="513" timestamp="1591325343699"/>
+<typeInfo handle="=chapter11/src&lt;cn.gdcp.dao{CustomerDao.java[CustomerDao" modifiers="513" timestamp="1591841910272"/>
+</typeInfoHistroy>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;class.properties&apos; to &apos;src&apos;" description="Move &apos;class.properties&apos; to &apos;src&apos;" destination="src" element1="WebContent/WEB-INF/class.properties" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1584680407342" updateReferences="true"/>
+</session>

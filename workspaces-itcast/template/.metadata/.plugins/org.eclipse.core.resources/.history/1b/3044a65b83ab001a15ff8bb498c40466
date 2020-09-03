@@ -1,0 +1,16 @@
+package cn.gdcp.service;
+
+import cn.gdcp.dao.CustomerDao;
+import cn.gdcp.po.Customer;
+
+public class CustomerServiceImpl implements CustomerService {
+	
+	private CustomerDao customerDao;
+
+	@Override
+	public Customer findCustomerById(Integer id) {
+		
+		return this.customerDao.findCustomerById(id);
+	}
+
+}

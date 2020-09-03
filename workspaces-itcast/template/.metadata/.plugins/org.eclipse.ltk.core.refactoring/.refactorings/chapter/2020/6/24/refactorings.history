@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;CustomerMapper.xml&apos; to &apos;chapter11/src/cn.gdcp.dao&apos;&#x0D;&#x0A;- Original project: &apos;chapter&apos;&#x0D;&#x0A;- Destination element: &apos;chapter11/src/cn.gdcp.dao&apos;&#x0D;&#x0A;- Original element: &apos;CustomerMapper.xml&apos;" description="Copy file" destination="=chapter11/src&lt;cn.gdcp.dao" element1="src/com/gdcp/mapper/CustomerMapper.xml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1591836629923" units="0" version="1.0"/>
+</session>

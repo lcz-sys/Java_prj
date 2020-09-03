@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+  <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gdcp.mapper.ClassMapper">
+
+	<select id="findClassesWithStudent" parameterType="int"
+		resultMap="ClassesWithStudentResult">
+		select * from class c,teacher t, student s where c.teacher_id=t.t_id and c.c_id=s.class_id and c.c_id=#{id}
+	</select>
+
+	<resultMap type="com.gdcp.po.Classes" id="ClassesWithStudentResult">
+
+		<id property="id" column="c_id" />
+		<result property="name" column="c_name" />
+		<association property="teacher" column="teacher_id" javaType="com.gdcp.po.Student">
+			<id property="id" column="t_id" />
+			<result property="name" column="t_name" />
+		</association>
+		<collection property="students" ofType="com.gdcp.po.Student">
+			<id property="id" column="s_id" />
+			<result property="name" column="s_name" />
+		</collection>
+
+	</resultMap>
+
+
+</mapper>

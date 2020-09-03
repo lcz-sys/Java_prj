@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.gdcp.mapper.CustomerMapper">
+	<select id="findCustomerById" parameterType="Integer"
+		resultType="com.gdcp.po.Customer">
+		select * from t_customer where id=#{id};
+	</select>
+	<select id="findCustomerByName" parameterType="String"
+		resultType="com.gdcp.po.Customer">
+		select * from t_customer where username like '%${value}%';
+	</select>
+	<!-- <select id="updateCustomer" parameterType="com.gdcp.po.Customer">
+		update t_customer set
+		username=#{username},jobs=#{job},phone=#{phone}
+		where id=#{id};
+	</select> -->
+	<select id="addCustomer" parameterType="com.gdcp.po.Customer">
+		insert into t_customer
+		(username,jobs,phone)
+		values(#{username},#{job},#{phone});
+	</select>
+	<select id="deleteCustomer" parameterType="Integer">
+		delete from t_customer
+		where id=#{id};
+	</select>
+	<select id="findCustomerNameAndJob" parameterType="com.gdcp.po.Customer"
+		resultType="com.gdcp.po.Customer">
+		select * from t_customer where 1=1
+		<if test="username != null and username != ''">
+			and username like concat ('%',#{username},'%')
+		</if>
+		<if test="job != null and job != ''">
+			and jobs =#{job}
+		</if>
+	</select>
+	<!-- <select id="findCustomerNameAndJob2" parameterType="com.gdcp.po.Customer"
+		resultType="com.gdcp.po.Customer">
+		select * from t_customer where 1=1
+		<choose>
+			<when test="username != null and username != ''">
+				and username = #{username}
+			</when>
+			<when test="job != null and job != ''">
+				and jobs =#{job}
+			</when>
+			<otherwise>
+				and phone is not null
+			</otherwise>
+		</choose>
+	</select> -->
+	<select id="a" parameterType="com.gdcp.po.Customer" resultType="com.gdcp.po.Customer">
+		select * from t_customer where 1=1
+		<if test="username != null and username != ''">
+			and username like concat ('%',#{username},'%')
+		</if>
+		<if test="job != null and job != ''">
+			and jobs =#{job}
+		</if>
+	</select>
+	<update id="updateCustomer" parameterType="com.gdcp.po.Customer">
+		update t_customer set
+		<!-- <set> -->
+		<if test="username != null">username=#{username},</if>
+		<if test="job != null">jobs=#{job},</if>
+		<if test="phone != null">phone=#{phone}</if>
+		<!-- </set> -->
+		<where>
+			<if test="id != null">
+				id=#{id}
+			</if>
+		</where>
+	</update>
+	
+	<select id="findCustomerNameAndJob2" parameterType="com.gdcp.po.Customer" resultType="com.gdcp.po.Customer">
+		select * from t_customer where 1=1
+		
+		<choose>
+			<when test="username != null and username != ''">
+				and username = #{username}
+			</when>
+			<when test="job != null and job != ''">
+				and jobs = #{job}
+			</when>
+			<otherwise>
+				and phone is not null
+			</otherwise>
+		</choose>
+	</select>
+
+</mapper>
+

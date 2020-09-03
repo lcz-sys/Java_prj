@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;User.java&apos; to &apos;Demo_maybatis/src/com.gdcp&apos;&#x0D;&#x0A;- Original project: &apos;chapter&apos;&#x0D;&#x0A;- Destination element: &apos;Demo_maybatis/src/com.gdcp&apos;&#x0D;&#x0A;- Original element: &apos;com.gdcp.po.User.java&apos;" description="Copy compilation unit" destination="=Demo_maybatis/src&lt;com.gdcp" element1="/src&lt;com.gdcp.po{User.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1588207935257" units="1" version="1.0"/>
+</session>

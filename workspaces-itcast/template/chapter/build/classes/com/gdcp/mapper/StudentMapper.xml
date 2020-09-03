@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+  <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gdcp.mapper.StudentMapper">
+
+    <select id="selectStudentCourse" resultMap="studentCourseMap">
+        select s.*,c.* from tb_student s,tb_course c,tb_select_course sc where s.s_id=sc.sc_s_id and c.c_id=sc.sc_c_id
+    </select>
+   
+    <resultMap type="com.gdcp.po.Student" id="studentCourseMap">
+        <id property="id" column="s_id"/>
+        <result property="name" column="s_name"/>
+        <result property="sex" column="s_sex"/>
+        <result property="age" column="s_age"/>
+        <collection property="courses" ofType="com.gdcp.po.Course">
+        	<id property="id" column="c_id"/>
+            <result property="name" column="c_name"/>
+            <result property="credit" column="c_credit"/>
+        </collection>
+    </resultMap>
+    
+	 <select id="findCourseByStudent" resultMap="studentCourseMap1">
+        select c.c_name from tb_course c,tb_select_course sc where sc.sc_s_id=#{id} and c.c_id=sc.sc_c_id
+    </select>
+   
+    <resultMap type="com.gdcp.po.Course" id="studentCourseMap1">
+        <id property="id" column="c_id"/>
+            <result property="name" column="c_name"/>
+            <result property="credit" column="c_credit"/>
+        <collection property="students" ofType="com.gdcp.po.Student">
+	        <id property="id" column="s_id"/>
+	        <result property="name" column="s_name"/>
+	        <result property="sex" column="s_sex"/>
+	        <result property="age" column="s_age"/>
+        	
+        </collection>
+    </resultMap>
+</mapper>

@@ -1,0 +1,5 @@
+#Tomcat publish data
+#Tue Jun 16 01:13:36 CST 2020
+org.eclipse.jst.jee.server\:/binary\:D\:\\workspaces-itcast\\template\\chapter17\\WebContent\\WEB-INF\\lib\\spring-web-4.3.6.RELEASE.jar=F\:\\apache-tomcat-7.0.37\\webapps\\chapter17\\WEB-INF\\lib\\spring-web-4.3.6.RELEASE.jar
+org.eclipse.jst.jee.server\:Demo=F\:\\apache-tomcat-7.0.37\\webapps\\Demo
+org.eclipse.jst.jee.server\:chapter17=F\:\\apache-tomcat-7.0.37\\webapps\\chapter17

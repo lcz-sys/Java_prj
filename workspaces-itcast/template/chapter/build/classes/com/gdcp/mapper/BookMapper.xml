@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.gdcp.mapper.BookMapper">
+	<!-- <select id="findBookById" parameterType="Integer"
+		resultType="com.gdcp.po.Book">
+		select * from books where id=#{id};
+	</select> -->
+	<select id="findBookByAuthor" parameterType="String"
+	resultType="com.gdcp.po.Book">
+		select * from books where  author='${value}';
+	</select>
+	<select id="updateBook" parameterType="com.gdcp.po.Book">
+		update t_book set
+		name=#{name},author=#{author},price=#{price},publish=#{publish}
+		where id=#{id};	
+	</select>
+</mapper>
+

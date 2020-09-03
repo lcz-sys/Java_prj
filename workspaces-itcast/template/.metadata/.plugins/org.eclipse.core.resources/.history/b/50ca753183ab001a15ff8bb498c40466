@@ -1,0 +1,25 @@
+package cn.gdcp.contorller;
+
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import cn.gdcp.po.Customer;
+import cn.gdcp.service.CustomerService;
+
+public class CustomerContorller {
+	
+	private CustomerService customerService;
+	
+	
+	@RequestMapping("/findCustomerById")
+	public String findCustomerById(Integer id,Model model){
+		
+		Customer customer = customerService.findCustomerById(id);
+		
+		model.addAttribute("customer",customer);
+		
+		return "customer";
+		
+	}
+
+}

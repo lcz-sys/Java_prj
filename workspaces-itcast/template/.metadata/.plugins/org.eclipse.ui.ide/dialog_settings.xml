@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\恒心.DESKTOP-HNE4HK9\Desktop\实训\新建文件夹\shop"/>
+			<item value="C:\Users\恒心.DESKTOP-HNE4HK9\Desktop\实训\shop"/>
+			<item value="C:\Users\恒心.DESKTOP-HNE4HK9\Desktop\-ssm-master\chapter15"/>
+			<item value="C:\Users\恒心.DESKTOP-HNE4HK9\Desktop\上机素材\unit18_prj_teacher"/>
+			<item value="C:\Users\恒心.DESKTOP-HNE4HK9\Desktop\ch8_prj_dynamicSql"/>
+			<item value="D:\workspaces-itcast\template\pm"/>
+			<item value="D:\workspaces-itcast\template\booksystem"/>
+			<item value="C:\Users\恒心\Desktop\第13-15章 综合案例\itcaststore"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+	<section name="ResourceNavigator">
+		<item value="Aggregate for window 1577588639251" key="ResourceWorkingSetFilter.STORE_WORKING_SET"/>
+		<item value="1" key="ResourceViewer.STORE_SORT_TYPE"/>
+		<item value="false" key="LINK_NAVIGATOR_TO_EDITOR"/>
+	</section>
+</section>

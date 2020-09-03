@@ -1,0 +1,15 @@
+package cn.gdcp.contorller;
+
+import cn.gdcp.service.CustomerService;
+
+public class CustomerContorller {
+	
+	private CustomerService customerService;
+	
+	
+	@RequestMapping("/findCustomerById")
+	public String findCustomerById(Integer id){
+		
+	}
+
+}

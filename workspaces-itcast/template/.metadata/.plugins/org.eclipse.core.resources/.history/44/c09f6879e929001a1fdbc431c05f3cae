@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<form action="/u6" method="post">
+	<input type="submit" value="请求访问"/>
+</form>
+
+</body>
+</html>

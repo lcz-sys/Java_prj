@@ -1,0 +1,9 @@
+package cn.gdcp.ioc;
+
+public class TestIoC {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

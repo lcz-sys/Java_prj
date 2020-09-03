@@ -1,0 +1,14 @@
+package cn.gdcp.service;
+
+import cn.gdcp.dao.CustomerService;
+import cn.gdcp.po.Customer;
+
+public class CustomerServiceImpl implements CustomerService {
+
+	@Override
+	public Customer findCustomerById(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,10 @@
+package cn.gdcp.jdbc;
+
+public class JDBCTemplateTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
